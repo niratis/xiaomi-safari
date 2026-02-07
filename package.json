@@ -1,0 +1,36 @@
+{
+  "name": "xiaomi-points-collector",
+  "version": "1.0.0",
+  "description": "Automated daily Mi Points collector for Xiaomi UK (mi.com/uk). Collects fuel, browses pages, and completes daily tasks to earn Mi Points automatically.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "xiaomi-points": "./src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "login": "node src/index.js --login",
+    "collect": "node src/index.js --collect",
+    "status": "node src/index.js --status",
+    "schedule:install": "node src/schedule.js install",
+    "schedule:uninstall": "node src/schedule.js uninstall"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "playwright": "^1.48.0",
+    "dotenv": "^16.4.0",
+    "commander": "^12.1.0"
+  },
+  "keywords": [
+    "xiaomi",
+    "mi-points",
+    "automation",
+    "daily-points",
+    "mi.com",
+    "uk"
+  ],
+  "license": "MIT",
+  "private": true
+}
